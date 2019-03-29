@@ -15,8 +15,7 @@ def getpos(image):
 	return x, y
 	
 
-
-for i in range(0, 10):
+def logFile():
 	try:
 		#click "log" @ log_pos
 		log_pos = getpos('log.png')
@@ -35,7 +34,7 @@ for i in range(0, 10):
 		start_log_pos = getpos('Start_logging.png')
 		pg.click(start_log_pos)
 	# wait 4 seconds
-	time.sleep(4.7)
+	time.sleep(1.3)
 	#click ok button @ (850, 500)
 	try:
 		ok_pos = getpos('OK.png')
